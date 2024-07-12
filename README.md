@@ -1,5 +1,5 @@
 # Spatial-transcriptomics-image-analysis
-Spatial transcriptomics Immunofluorescence(IF) image analysis and annotation (compatible with 10x Genomics visium and Cytassist)
+Spatial transcriptomics Immunofluorescence(IF) image analysis and annotation (compatible with 10x Genomics visium and Cytassist).
 This code was developed on Matlab and uses the Image Processing Toolbox functions.
 This code is meant for use with conventional 10x Genomics visium and Cytassist slides after immunofurescent staining. However, it may be user defined and can be expanded to include analysis of IF images paired with Visium and Cytassist HD. The analysis output can be imported to Loupe Browser or be used with other bioinformatic analysis tools and programs.
 
