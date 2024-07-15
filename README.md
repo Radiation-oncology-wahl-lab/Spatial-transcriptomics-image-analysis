@@ -347,7 +347,7 @@ Create the following 5 scripts in matlab:
 
 
 
-Create a folder with the above scripts along with the images to be processed and their corresponding .csv files containing X,Y coordinates of the visium/Cytassist spots or barcodes. The coordinates file can be obtained from Loupe browser by clicking "Export Projection" listed under "spatial" aspect of Space Ranger analysis.
+Create a folder with the above scripts along with the images(.tif) to be processed and their corresponding .csv files containing X,Y coordinates of the visium/Cytassist spots or barcodes. The coordinates file can be obtained from Loupe browser by clicking "Export Projection" listed under "spatial" aspect of Space Ranger analysis.
 
 Set this folder as the working directory in matlab.
 
@@ -395,6 +395,9 @@ Setting Default Values:
 (i) Pixel Clean-up	20
 
   This is the minimum number of pixels to define a nuclues. 
+
+
+The code also asks the user to define the program call determinants. The user can choose to define the spots based on intensity of the fluorophore or the percentage of cells positive for the marker or both of these parameters taken together. The program call will be '0' for the spots that dont meet the criteria and '1' for the spots that meet the user defined requirements.  
 
 The output is called "Final Cluster table" in the Matlab workspace. This table shows the coordinates of the barcode, total cells in the spot, intensity of the biomarker in the spot, percentage of cells positive for the biomarker in the spot and the final program call deciding whether the spot is positive or negative. This information can be converted to a csv file containing the barcode and annotation as positive or negative. This file can be imported to loupe browser and differential gene expression can be studied. The annotation file may also be used for advanced bioinformatic analysis of the RNA sequencing data in R and/or Python. 
 
