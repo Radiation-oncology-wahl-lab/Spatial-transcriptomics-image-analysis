@@ -405,7 +405,7 @@ If this code needs to be applied to visium HD, alter the script in Cluster_Radiu
 
 To determine the appropriate mix of red, blue and green for  given color of the marker, the user can make use of impixel functiion on matlab to identify the R,G and B values of their marker color using the following code.
 ##
-      Test_image= imread (insert image name.tif')
+      Test_image= imread('insert image name.tif')
       impixel(Test_image)
 
 The user can then select the appropriate area of the image for which the RGB values need to be assessed. Once the RGB theresholds have been determined, the user can enter these values in the (f), (g) and (h) fields mentioned above.
