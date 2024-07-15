@@ -401,7 +401,15 @@ The code also asks the user to define the program call determinants. The user ca
 
 The output is called "Final Cluster table" in the Matlab workspace. This table shows the coordinates of the barcode, total cells in the spot, intensity of the biomarker in the spot, percentage of cells positive for the biomarker in the spot and the final program call deciding whether the spot is positive or negative. This information can be converted to a csv file containing the barcode and annotation as positive or negative. This file can be imported to loupe browser and differential gene expression can be studied. The annotation file may also be used for advanced bioinformatic analysis of the RNA sequencing data in R and/or Python. 
 
-If this code needs to be applied to visium HD, alter the script in Cluster_Radius.m by changing the value of "radius=" to match the pixel size of the RNAseq platform.
+If this code needs to be applied to visium HD, alter the script in Cluster_Radius.m by changing the value of "radius=" to match the pixel size of the barcoded spots on the RNAseq platform.
+
+To determine the appropriate mix of red, blue and green for  given color of the marker, the user can make use of impixel functiion on matlab to identify the R,G and B values of their marker color using the following code.
+##
+      Test_image= imread (insert image name.tif')
+      impixel(Test_image)
+
+The user can then select the appropriate area of the image for which the RGB values need to be assessed. Once the RGB theresholds have been determined, the user can enter these values in the (f), (g) and (h) fields mentioned above.
+
 
 
 
